@@ -54,7 +54,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-repository: trendtrackers
+repository: trendtrackers/trendtrackers.github.io
 
 # collections:
 #   portfolio:
