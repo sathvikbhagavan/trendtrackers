@@ -4,7 +4,7 @@ title: "ML Driven Targeting for HIV-I Inhibition"
 permalink: /
 ---
 
-## HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔
+# HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔
 
 Human Immunodeficiency Virus Type 1 (HIV-1) has claimed the lives of over *42 million* people and remains a formidable global health challenge. By the end of 2023, approximately *39.9 million* individuals were living with HIV. While a cure remains elusive, remarkable advancements in prevention, diagnosis, treatment, and care—including the management of opportunistic infections—have transformed HIV from a fatal illness into a chronic, manageable condition. Today, individuals with access to proper care can lead long and healthy lives.
 
