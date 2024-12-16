@@ -4,6 +4,18 @@ title: "ML Driven Targeting for HIV-I Inhibition"
 permalink: /
 ---
 
+<!-- ![HIV Virus](assets/images/social-170112-HIV.jpg) -->
+
+<img src="assets/images/social-170112-HIV.jpg" alt="Full Width Image" style="width: 100%; height: auto;">
+
+
+- [HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔](#hiv-1-the-global-health-challenge-were-still-fighting-)
+  - [Why HIV-1 is the Virus Scientists Can't Stop Studying 🔬🦠](#why-hiv-1-is-the-virus-scientists-cant-stop-studying-)
+  - [Uncovering New Ligand Families for HIV-1: A Journey into Molecular Discovery 🔍🧬](#uncovering-new-ligand-families-for-hiv-1-a-journey-into-molecular-discovery-)
+    - [Decoding the Molecular Blueprint: From SMILES to Clusters 💡🔑](#decoding-the-molecular-blueprint-from-smiles-to-clusters-)
+
+&nbsp;
+
 # HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔
 
 Human Immunodeficiency Virus Type 1 (HIV-1) has claimed the lives of over *42 million* people and remains a formidable global health challenge. By the end of 2023, approximately *39.9 million* individuals were living with HIV. While a cure remains elusive, remarkable advancements in prevention, diagnosis, treatment, and care—including the management of opportunistic infections—have transformed HIV from a fatal illness into a chronic, manageable condition. Today, individuals with access to proper care can lead long and healthy lives.
@@ -15,6 +27,8 @@ Despite these milestones, the fight against HIV is far from over. The scientific
 HIV-1 isn’t just another virus in the global health landscape—it’s one of the most studied viruses in both academia and industry. In fact, if you take a look at the research landscape, you'll see that HIV-1 leads the charge in terms of global attention, far outpacing other viruses. It’s like the rockstar of the virology world! Why? Because HIV-1 has proven to be tricky, resilient, and constantly evolving, making it a worthy adversary for researchers and drug developers alike.
 
 {% include HIV1study.html %}
+
+There is some text here.
 
 {% include piechartHIV.html %}
 
