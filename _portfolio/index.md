@@ -1,22 +1,23 @@
 ---
 layout: splash
-title: "ML Driven Targeting for HIV-I Inhibition"
 permalink: /
 ---
 
-<!-- ![HIV Virus](assets/images/social-170112-HIV.jpg) -->
+<div style="text-align: center; margin-top: 50px; font-size: 2.5rem;">
+  <h1>ML Driven Targeting for HIV-I Inhibition</h1>
+</div>
 
-<img src="assets/images/social-170112-HIV.jpg" alt="Full Width Image" style="width: 100%; height: auto;">
+<img src="assets/images/social-170112-HIV.jpg" alt="HIV Virus" style="width: 200%; height: auto;">
 
+## Table of contents
 
 - [HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔](#hiv-1-the-global-health-challenge-were-still-fighting-)
   - [Why HIV-1 is the Virus Scientists Can't Stop Studying 🔬🦠](#why-hiv-1-is-the-virus-scientists-cant-stop-studying-)
   - [Uncovering New Ligand Families for HIV-1: A Journey into Molecular Discovery 🔍🧬](#uncovering-new-ligand-families-for-hiv-1-a-journey-into-molecular-discovery-)
     - [Decoding the Molecular Blueprint: From SMILES to Clusters 💡🔑](#decoding-the-molecular-blueprint-from-smiles-to-clusters-)
 
-&nbsp;
 
-# HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔
+## HIV-1: The Global Health Challenge We’re Still Fighting 🌍💔
 
 Human Immunodeficiency Virus Type 1 (HIV-1) has claimed the lives of over *42 million* people and remains a formidable global health challenge. By the end of 2023, approximately *39.9 million* individuals were living with HIV. While a cure remains elusive, remarkable advancements in prevention, diagnosis, treatment, and care—including the management of opportunistic infections—have transformed HIV from a fatal illness into a chronic, manageable condition. Today, individuals with access to proper care can lead long and healthy lives.
 
