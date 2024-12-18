@@ -1,13 +1,12 @@
 ---
 layout: splash
 permalink: /
+title: "ML Driven Targeting for HIV-I Inhibition"
+header:
+  overlay_image: "assets/images/HIV.jpg" # Path to the image
+  overlay_filter: 0.5 # Optional; darkens the image
+  overlay_full: true # Ensures the image spans the full width
 ---
-
-<div style="text-align: center; margin-top: 50px; font-size: 2.5rem;">
-  <h1>ML Driven Targeting for HIV-I Inhibition</h1>
-</div>
-
-<img src="assets/images/social-170112-HIV.jpg" alt="HIV Virus" style="width: 200%; height: auto;">
 
 ## Table of contents
 
