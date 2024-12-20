@@ -41,11 +41,13 @@ Human Immunodeficiency Virus Type 1 (HIV-1) has claimed over 42 million lives an
 
 Despite these strides, the fight against HIV is far from over. The scientific community continues to innovate, developing protein inhibitors and other cutting-edge therapeutic approaches to enhance treatment outcomes and combat the virus more effectively. Developing effective inhibitors for HIV-1 remains a complex and crucial goal for both industry and academia.
 
-Our objective is to identify families of ligands with shared structural and chemical properties that can inhibit HIV-1, facilitating the design of novel, targeted inhibitors. To achieve this, we will leverage clustering algorithms to classify ligands based on their characteristics, paving the way for more precise and effective therapeutic interventions.
+Our objective is to identify families of ligands with shared structural and chemical properties that can inhibit HIV-1, facilitating the design of novel, targeted inhibitors. To achieve this, we will leverage clinical data collected and use clustering algorithms to classify ligands based on their characteristics, paving the way for more precise and effective therapeutic interventions.
+
+In addition to clustering, we are building predictive models to estimate the binding affinity of ligands for HIV-1 proteins. These models aim to complement the clustering analysis by providing quantitative insights into ligand-protein interactions, further enabling the rational design of high-affinity inhibitors.
 
 # Is HIV-1 studied a lot? 🔬🦠
 
-HIV-1 isn’t just another virus in the global health landscape—it’s one of the most studied viruses in both academia and industry. In fact, if you take a look at the research landscape, you'll see that HIV-1 leads the charge in terms of global attention, far outpacing other viruses. It’s like the rockstar of the virology world! Why? Because HIV-1 has proven to be tricky, resilient, and constantly evolving, making it a worthy adversary for researchers and drug developers alike.
+HIV-1 isn’t just another virus in the global health landscape—it’s one of the most studied viruses in both academia and industry. In fact, if you take a look at the research landscape, you'll see that HIV-1 leads the charge in terms of global attention, far outpacing other viruses. It’s like the rockstar of the virology world! Why? Because HIV-1 has proven to be tricky, resilient, and constantly evolving, making it a worthy adversary for researchers and drug developers alike. The plots below make it very clear.
 
 {% include HIV1_study.html %}
 
@@ -53,7 +55,7 @@ HIV-1 isn’t just another virus in the global health landscape—it’s one of 
 
 # Uncovering New Ligand Families for HIV-1: A Journey into Molecular Discovery 🔍🧬
 
-Our mission? To uncover potential families of ligands that could be the key to tackling HIV-1. But how do we do that? Well, we’ve got a toolkit of high-tech tricks up our sleeves to get to the heart of this molecular puzzle.
+Our mission is to uncover potential families of ligands that could be the key to tackling HIV-1. But how do we do that? Well, we’ve got a *toolkit* of high-tech tricks up our sleeves to get to the heart of this molecular puzzle!
 
 ## Decoding the Molecular Blueprint: From SMILES to Clusters 💡🔑
 
@@ -63,13 +65,13 @@ Next, we applied *K-means* clustering, a method that groups similar items togeth
 
 # Analysis of different properties of the ligands
 
-Now lets start analysing some properties of these clusters to gain some insights.
+Now let us start analysing some properties of these clusters to gain some insights!
 
 ## Focusing In: The Target That Stands Out 🎯🦠
 
-Our analysis then led us to a critical decision, which HIV-1 target should we focus on? After analyzing the clusters, we found that the *Gag-Pol Polyprotein [489-587]* was the most prevalent target across all four groups (as illustrated below). This polyprotein is a key player in the virus’s lifecycle, making it a prime target for further exploration. 
+Our analysis then led us to a critical decision, which HIV-1 target should we particularly focus on? After analyzing the clusters, we found that the *Gag-Pol Polyprotein [489-587]* was the most prevalent target across all four groups (as illustrated below). This polyprotein is a key player in the virus’s lifecycle, making it a prime target for further exploration. 
 
-So, we’ve decided to zoom in on gag-pol and dive deeper into the ligands that target this particular protein.
+So, we’ve decided to zoom in on Gag-Pol and dive deeper into the ligands that target this particular protein.
 
 {% include targets_by_cluster.html %}
 
@@ -77,7 +79,7 @@ So, we’ve decided to zoom in on gag-pol and dive deeper into the ligands that 
 
 In drug discovery, *Ki* is the superstar we need to understand. It measures how tightly a ligand binds to its target - the stronger the binding, the better the drug. Think of it like a handshake: a firm, steady grip means the ligand is really connecting with its target, which is exactly what we want in our potent inhibitors.
 
-By analyzing how Ki values vary across our clusters, we can spot potential ligand families that show promise. The boxplot below shows the distribution of Ki values across the clusters, and there’s a notable trend: *Cluster 1* stands out with the lowest mean Ki, suggesting it’s particularly strong at binding to its target.
+By analyzing how Ki values vary across our clusters, we can spot potential ligand families that show promise. The boxplot below shows the distribution of Ki values across the clusters, and there’s a notable trend: *Cluster 1* stands out with the lowest mean Ki, suggesting it’s particularly strong at binding to its target, i.e., Gag-Pol.
 
 {% include boxplot_ki_by_cluster.html %}
 
@@ -85,9 +87,9 @@ By analyzing how Ki values vary across our clusters, we can spot potential ligan
 
 Let’s talk about Molecular Weight (MW) — a key player in drug discovery. When designing drugs, especially for a complex target like HIV-1, MW significantly influences properties like absorption, solubility, and bioavailability.
 
-According to Lipinski’s Rule of Five, molecules with a molecular weight under *500 Daltons* tend to have favorable absorption and bioavailability. However, as molecules get larger, they often face challenges like poor membrane permeability and inefficient clearance. While larger molecules might bind more effectively to their targets, they also struggle with penetrating tissues and reaching their sites of action.
+According to *Lipinski’s Rule of Five*, molecules with a molecular weight under *500 Daltons* tend to have favorable absorption and bioavailability. However, as molecules get larger, they often face challenges like poor membrane permeability and inefficient clearance. While larger molecules might bind more effectively to their targets, they also struggle with penetrating tissues and reaching their sites of action.
 
-When examining inhibitors of the HIV-1 Gag-pol polyprotein, most compounds exceed the 500 Dalton threshold. However, *Cluster 3* stands out with a mean molecular weight of 461 Daltons, the only family under 500. This offers researchers an exciting avenue to explore smaller, more flexible compounds while balancing potency and selectivity.
+When examining inhibitors of the HIV-1 Gag-pol polyprotein, most compounds exceed the 500 Dalton threshold. However, *Cluster 3* stands out, with a mean molecular weight of 461 Daltons, the only family under 500. This offers researchers an exciting avenue to explore smaller, more flexible compounds while balancing potency and selectivity.
 
 {% include interactive_hist_MW.html %}
 
@@ -115,7 +117,7 @@ For HIV-1 inhibitors, the number of stereocenters ranges between *2 and 5* acros
 
 We also wanted to dive into hydrogen bonds - those little but mighty interactions that help stabilize a ligand’s binding to its target. Hydrogen bond donors and acceptors play a pivotal role in how tightly and specifically a ligand can bind to a target protein.
 
-We applied the same rigorous statistical tests to analyze hydrogen bond properties. Here’s what we found: for H-bond donors, all pairwise comparisons showed significant differences between clusters — except for clusters 1 and 0. For H-bond acceptors, the differences were significant across all clusters — except for clusters 1 and 3. This suggests that *cluster 1* has some unique binding characteristics, further setting it apart as a promising ligand family.
+We applied rigorous statistical tests to analyze hydrogen bond properties. Here’s what we found: for H-bond donors, all pairwise comparisons showed significant differences between clusters — except for clusters 1 and 0. For H-bond acceptors, the differences were significant across all clusters — except for clusters 1 and 3. This suggests that *cluster 1* has some unique binding characteristics, further setting it apart as a promising ligand family.
 
 {% include boxplot_hdonors_by_cluster.html %}
 
@@ -141,7 +143,7 @@ When analyzing the clusters, *1 and 3* stood out with mean TPSA values below 140
 
 ## Scoring the Stars of Drug Design: Finding the Best Gag-Pol Inhibitor 🌟⚖️
 
-To identify the most promising drug candidates, we evaluated four essential properties that are pivotal in drug development:
+To identify the most promising drug candidates, we evaluated *four essential* properties that are pivotal in drug development:
 
 - **Binding Affinity (Ki)**: A measure of how tightly the drug binds to its target—a lower value indicates stronger binding and greater potential effectiveness.
 
@@ -155,7 +157,7 @@ We assigned weights to each property based on their relative importance, as dete
 
 ## The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊
 
-To visualize the key properties of our top 10 drugs we found (using the method mentioned above) targeting the HIV-1 Gag-Pol polyprotein, we turned to radar plots — a dynamic way to capture their strengths and weaknesses across multiple dimensions. Here’s a closer look at the five critical properties we evaluated:
+To visualize the key properties of our top 10 drugs we found (using the method mentioned above) targeting the Gag-Pol polyprotein, we turned to radar plots — a dynamic way to capture their strengths and weaknesses across multiple dimensions. Here’s a closer look at the five important clincal properties we evaluated:
 
 1. **BBB Martins** (Blood-Brain Barrier Permeability): The blood-brain barrier acts as the brain’s bouncer, keeping harmful compounds out. For our drugs, low BBB values are ideal to avoid neurotoxicity—a major concern when designing safe therapeutics.
 
@@ -177,13 +179,13 @@ Our radar plots revealed that *nine* of our ten drugs share a consistent profile
 
 - **Solubility Checks**: The drugs exhibit moderate solubility (log solubility mean: -2.43), striking a balance between dissolving in blood and penetrating the non-polar viral membrane.
 
-We named the drugs as 1 to 10 as their chemical names are too long and uninteresting!
+We named the drugs as 1 to 10 below as their chemical names are too long and uninteresting!
 
 {% include radar_plots_top_10_drugs.html %}
 
 ## Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊
 
-From our analysis of ligand clusters targeting HIV-1 Gag-pol polyprotein, *clusters 1 and 3* bring unique strengths and areas for improvement. Here are a few:
+From our analysis of ligand clusters targeting HIV-1 Gag-pol polyprotein, *Clusters 1 and 3* bring unique strengths and areas for improvement. Here are a few:
 
 - **Affinity**: Cluster 1 stands out with the lowest mean Ki, indicating stronger binding affinity and potential for high efficacy. This makes it a promising candidate for further exploration.
 
@@ -201,7 +203,19 @@ The analysis of our top 10 drug candidates offers an optimistic outlook. These c
 
 # Affinity Prediction 🧲🔬
 
-This is affinity prediction section
+We developed predictive models to estimate the Ki values for Gag-Pol given a ligand. As a baseline, we used random sampling and then trained a *linear regression* model and an *XGBoost* tree model. Our test results show that the machine learning models outperformed the baseline, demonstrating their potential as effective alternatives to costly laboratory experiments. The plots below show the absolute error between the ground truth and predicted values for a hold out test set.
+
+{% include random_test.html %}
+
+{% include LM_test.html %}
+
+{% include XGB_test.html %}
+
+The results does show some *promise* but are not too good. This might be because the feature vectors used here were not representative enough to predict Ki accurately. Additionally, the amount of data is limited, which can hinder the model's ability to generalize and capture underlying patterns. Another possibility is that this might not be a well-posed problem, with the features lacking sufficient information to reliably map to the target variable. Future work could focus on improving the quality of feature engineering, expanding the dataset, or reformulating the problem to enhance predictive performance.
+
+# Conclusion
+
+In conclusion, this work highlights the potential of computational approaches in identifying promising ligand families and predicting their affinity for HIV-1 targets. While challenges such as limited data and feature representation remain, these methods provide a valuable starting point for guiding future experimental efforts and advancing HIV-1 inhibitor design.
 
 # References
 
@@ -209,7 +223,6 @@ This is affinity prediction section
 2. [https://www.who.int/news-room/fact-sheets/detail/hiv-aids](https://www.who.int/news-room/fact-sheets/detail/hiv-aids)
 3. [https://en.wikipedia.org/w/index.php?title=Lipinski%27s_rule_of_five&oldid=1259121091](https://en.wikipedia.org/w/index.php?title=Lipinski%27s_rule_of_five&oldid=1259121091)
 4. [https://www.sciencedirect.com/topics/chemistry/logp](https://www.sciencedirect.com/topics/chemistry/logp)
-5. [https://doi.org/10.2174/092986709787002817](https://www.sciencedirect.com/topics/chemistry/logp)
 
 # Appendix
 
@@ -245,7 +258,7 @@ We are the humble `TrendTrackers` who led you into this fascinating journey of d
 
 - Antonin Hudry
 - Emma Forget
-- Leonardo Triedici
+- Leonardo Tredici
 - Nithujaa Thirunavukkarasu
 - Sathvik Bhagavan
 
