@@ -24,6 +24,7 @@ header:
   - [Hydrogen Bonds: The Secret Weapon of Binding Interactions 🧪💨](#hydrogen-bonds-the-secret-weapon-of-binding-interactions-)
   - [Tanimoto Similarities: Unraveling the Molecular Family Resemblance 🧬🔍](#tanimoto-similarities-unraveling-the-molecular-family-resemblance-)
   - [TPSA: A Key to Bioavailability and Drug Design 💊💡](#tpsa-a-key-to-bioavailability-and-drug-design-)
+  - [Scoring the Stars of Drug Design: Finding the Best Gag-Pol Inhibitor 🌟⚖️](#scoring-the-stars-of-drug-design-finding-the-best-gag-pol-inhibitor-️)
   - [The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊](#the-radar-of-drug-design-profiling-our-top-10-gag-pol-inhibitors-)
   - [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
 - [Affinity Prediction 🧲🔬](#affinity-prediction-)
@@ -59,8 +60,6 @@ We started with *SMILES*, the digital language for describing molecular structur
 
 Next, we applied *K-means* clustering, a method that groups similar items together, like organizing a playlist by genre. The result? *Four* distinct ligand clusters, each representing a family of compounds with unique characteristics that set them apart from the others.
 
-Cluster plot
-
 # Analysis of different properties of the ligands
 
 Now lets start analysing some properties of these clusters to gain some insights.
@@ -88,6 +87,8 @@ Let’s talk about Molecular Weight (MW) — a key player in drug discovery. Whe
 According to Lipinski’s Rule of Five, molecules with a molecular weight under *500 Daltons* tend to have favorable absorption and bioavailability. However, as molecules get larger, they often face challenges like poor membrane permeability and inefficient clearance. While larger molecules might bind more effectively to their targets, they also struggle with penetrating tissues and reaching their sites of action.
 
 When examining inhibitors of the HIV-1 Gag-pol polyprotein, most compounds exceed the 500 Dalton threshold. However, *Cluster 3* stands out with a mean molecular weight of 461 Daltons, the only family under 500. This offers researchers an exciting avenue to explore smaller, more flexible compounds while balancing potency and selectivity.
+
+{% include interactive_hist_MW.html %}
 
 ## Hydrophobicity: The Permeability Puzzle 💧🧪
 
@@ -125,6 +126,10 @@ To dig deeper into the molecular relationships within each cluster, we turned to
 
 So, what did we find? The highest similarity was in cluster 1, but the average similarity value was just *0.41*. Not exactly a perfect match, right? This suggests that while the ligands in the clusters share chemical properties, their actual structures are not identical.
 
+{% include Similarity_distribution.html %}
+
+{% include tanimoto_heatmap_cluster1.html %}
+
 ## TPSA: A Key to Bioavailability and Drug Design 💊💡
 
 Finally, let’s talk about Topological Polar Surface Area (TPSA), a critical measure of a compound’s bioavailability. TPSA helps us understand how well a compound can cross cell membranes, which is crucial for drugs taken orally. A TPSA under *140 angstroms* generally indicates good oral bioavailability.
@@ -133,9 +138,23 @@ When analyzing the clusters, *1 and 3* stood out with mean TPSA values below 140
 
 {% include mean_tpsa_by_cluster.html %}
 
+## Scoring the Stars of Drug Design: Finding the Best Gag-Pol Inhibitor 🌟⚖️
+
+To identify the most promising drug candidates, we evaluated four essential properties that are pivotal in drug development:
+
+- **Binding Affinity (Ki)**: A measure of how tightly the drug binds to its target—a lower value indicates stronger binding and greater potential effectiveness.
+
+- **Lipinski Score**: A checklist for "drug-likeness," ensuring the compound adheres to guidelines that predict good absorption and permeability.
+
+- **Toxicity**: No one likes side effects—low toxicity is a must for clinical success and patient safety.
+
+- **Protein Solubility**: Drugs need to navigate the bloodstream efficiently, making solubility a crucial factor for effective delivery.
+
+We assigned weights to each property based on their relative importance, as determined by the explained variance in a PCA analysis. This approach ensures that our scoring reflects the true contribution of each property, helping us zero in on the best-performing candidates with precision.
+
 ## The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊
 
-To visualize the key properties of our top 10 drugs targeting the HIV-1 Gag-Pol polyprotein, we turned to radar plots — a dynamic way to capture their strengths and weaknesses across multiple dimensions. Here’s a closer look at the five critical properties we evaluated:
+To visualize the key properties of our top 10 drugs we found (using the method mentioned above) targeting the HIV-1 Gag-Pol polyprotein, we turned to radar plots — a dynamic way to capture their strengths and weaknesses across multiple dimensions. Here’s a closer look at the five critical properties we evaluated:
 
 1. **BBB Martins** (Blood-Brain Barrier Permeability): The blood-brain barrier acts as the brain’s bouncer, keeping harmful compounds out. For our drugs, low BBB values are ideal to avoid neurotoxicity—a major concern when designing safe therapeutics.
 
@@ -156,6 +175,10 @@ Our radar plots revealed that *nine* of our ten drugs share a consistent profile
 - **Diffusion Potential**: The bioavailability scores (mean 0.69) suggest our drugs diffuse well, offering good efficacy potential.
 
 - **Solubility Checks**: The drugs exhibit moderate solubility (log solubility mean: -2.43), striking a balance between dissolving in blood and penetrating the non-polar viral membrane.
+
+We named the drugs as 1 to 10 as their chemical names are too long and uninteresting!
+
+{% include radar_plots_top_10_drugs.html %}
 
 ## Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊
 
