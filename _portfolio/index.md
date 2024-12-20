@@ -31,6 +31,7 @@ header:
 - [References](#references)
 - [Appendix](#appendix)
   - [Statistical Tools Used in Our Analysis](#statistical-tools-used-in-our-analysis)
+- [Authors](#authors)
 
 ---
 
@@ -237,3 +238,15 @@ Why Not ANOVA and t-Tests?
 While ANOVA and t-tests are standard for similar analyses, their validity depends on certain assumptions, such as:
 
 The data must follow a normal distribution. The variances among groups must be equal. To verify these assumptions, we conducted a *Shapiro-Wilk* test to assess the normality of the data. The results showed that the distributions were not normal, invalidating the use of ANOVA and t-tests for our analysis. Instead, we opted for non-parametric tests like Kruskal-Wallis and Mann-Whitney U, which do not rely on these assumptions and are better suited for our data.
+
+# Authors
+
+We are the humble `TrendTrackers` who led you into this fascinating journey of drug discovery. Our real names are:
+
+- Antonin Hudry
+- Emma Forget
+- Leonardo Triedici
+- Nithujaa Thirunavukkarasu
+- Sathvik Bhagavan
+
+Thanks for reading our story!
