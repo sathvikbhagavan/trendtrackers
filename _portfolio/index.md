@@ -161,13 +161,13 @@ We assigned weights to each property based on their relative importance, as dete
 
 To visualize the key properties of our top 10 drugs we found (using the method mentioned above) targeting the Gag-Pol polyprotein, we turned to radar plots — a dynamic way to capture their strengths and weaknesses across multiple dimensions. Here’s a closer look at the five important clincal properties we evaluated:
 
-1. **BBB Martins** (Blood-Brain Barrier Permeability): The blood-brain barrier acts as the brain’s bouncer, keeping harmful compounds out. For our drugs, low BBB values are ideal to avoid neurotoxicity—a major concern when designing safe therapeutics.
+1. **BBB Martins** (Blood-Brain Barrier Permeability) (`BBB`): The blood-brain barrier acts as the brain’s bouncer, keeping harmful compounds out. For our drugs, low BBB values are ideal to avoid neurotoxicity—a major concern when designing safe therapeutics.
 
-2. **hERG Inhibition**: Cardiac arrhythmia is one of the most frequent adverse effects of drugs, often caused by inhibition of the hERG cardiac gene. Minimizing this interaction is crucial for ensuring cardiovascular safety.
+2. **hERG Inhibition** (`hERG`): Cardiac arrhythmia is one of the most frequent adverse effects of drugs, often caused by inhibition of the hERG cardiac gene. Minimizing this interaction is crucial for ensuring cardiovascular safety.
 
-3. **Bioavailability** (`Bioavailability_Ma`): Drugs taken orally face hurdles like absorption through the gut and metabolism in the liver. A high bioavailability score is key for ensuring the drug reaches its target effectively.
+3. **Bioavailability** (`Bioavail`): Drugs taken orally face hurdles like absorption through the gut and metabolism in the liver. A high bioavailability score is key for ensuring the drug reaches its target effectively.
 
-4. **Aqueous Solubility** (`Solubility_AqSolDB`): Drugs must dissolve well in the bloodstream to circulate efficiently. Good solubility is a must for our compounds to mix seamlessly with polar environments like blood.
+4. **Aqueous Solubility** (`Solub_Aq`): Drugs must dissolve well in the bloodstream to circulate efficiently. Good solubility is a must for our compounds to mix seamlessly with polar environments like blood.
 
 5. **Clinical Toxicity** (`ClinTox`): Every drug comes with some level of toxicity, but keeping this low is essential for meeting FDA and EMA approval.
 
