@@ -25,7 +25,7 @@ header:
   - [Tanimoto Similarities: Unraveling the Molecular Family Resemblance 🧬🔍](#tanimoto-similarities-unraveling-the-molecular-family-resemblance-)
   - [TPSA: A Key to Bioavailability and Drug Design 💊💡](#tpsa-a-key-to-bioavailability-and-drug-design-)
   - [The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊](#the-radar-of-drug-design-profiling-our-top-10-gag-pol-inhibitors-)
-- [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
+  - [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
 - [Affinity Prediction 🧲🔬](#affinity-prediction-)
 - [References](#references)
 - [Appendix](#appendix)
@@ -157,7 +157,7 @@ Our radar plots revealed that *nine* of our ten drugs share a consistent profile
 
 - **Solubility Checks**: The drugs exhibit moderate solubility (log solubility mean: -2.43), striking a balance between dissolving in blood and penetrating the non-polar viral membrane.
 
-# Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊
+## Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊
 
 From our analysis of ligand clusters targeting HIV-1 Gag-pol polyprotein, *clusters 1 and 3* bring unique strengths and areas for improvement. Here are a few:
 
