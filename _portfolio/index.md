@@ -28,6 +28,7 @@ header:
   - [The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊](#the-radar-of-drug-design-profiling-our-top-10-gag-pol-inhibitors-)
   - [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
 - [Affinity Prediction 🧲🔬](#affinity-prediction-)
+- [Conclusion](#conclusion)
 - [References](#references)
 - [Appendix](#appendix)
   - [Statistical Tools Used in Our Analysis](#statistical-tools-used-in-our-analysis)
@@ -266,4 +267,4 @@ We are the humble `TrendTrackers` who led you into this fascinating journey of d
 - Nithujaa Thirunavukkarasu
 - Sathvik Bhagavan
 
-Thanks for reading our story!
+Thank you for reading our story!
