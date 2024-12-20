@@ -8,14 +8,26 @@ header:
   overlay_full: true # Ensures the image spans the full width
 ---
 
-<!-- ---
+---
 # Table of contents
 
 - [Introduction](#introduction)
 - [Is HIV-1 studied a lot? 🔬🦠](#is-hiv-1-studied-a-lot-)
 - [Uncovering New Ligand Families for HIV-1: A Journey into Molecular Discovery 🔍🧬](#uncovering-new-ligand-families-for-hiv-1-a-journey-into-molecular-discovery-)
   - [Decoding the Molecular Blueprint: From SMILES to Clusters 💡🔑](#decoding-the-molecular-blueprint-from-smiles-to-clusters-)
---- -->
+- [Analysis of different properties of the ligands](#analysis-of-different-properties-of-the-ligands)
+  - [Focusing In: The Target That Stands Out 🎯🦠](#focusing-in-the-target-that-stands-out-)
+  - [Are the families similar in Ki values? 🔑💥](#are-the-families-similar-in-ki-values-)
+  - [Molecular Weight: A Crucial Factor in Drug Discovery 🏋️‍♀️💊](#molecular-weight-a-crucial-factor-in-drug-discovery-)
+  - [Hydrophobicity: The Permeability Puzzle 💧🧪](#hydrophobicity-the-permeability-puzzle-)
+  - [Stereocenters: The Complexity Factor 🔀🧬](#stereocenters-the-complexity-factor-)
+  - [Hydrogen Bonds: The Secret Weapon of Binding Interactions 🧪💨](#hydrogen-bonds-the-secret-weapon-of-binding-interactions-)
+  - [Tanimoto Similarities: Unraveling the Molecular Family Resemblance 🧬🔍](#tanimoto-similarities-unraveling-the-molecular-family-resemblance-)
+  - [TPSA: A Key to Bioavailability and Drug Design 💊💡](#tpsa-a-key-to-bioavailability-and-drug-design-)
+  - [The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊](#the-radar-of-drug-design-profiling-our-top-10-gag-pol-inhibitors-)
+- [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
+- [Affinity Prediction](#affinity-prediction)
+---
 
 # Introduction
 
