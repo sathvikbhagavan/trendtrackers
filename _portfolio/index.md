@@ -205,13 +205,15 @@ The analysis of our top 10 drug candidates offers an optimistic outlook. These c
 
 # Affinity Prediction 🧲🔬
 
-We developed predictive models to estimate the Ki values for Gag-Pol given a ligand. As a baseline, we used random sampling and then trained a *linear regression* model and an *XGBoost* tree model. Our test results show that the machine learning models outperformed the baseline, demonstrating their potential as effective alternatives to costly laboratory experiments. The plots below show the absolute error between the ground truth and predicted values for a hold out test set.
+We developed predictive models to estimate the Ki values for Gag-Pol given a ligand. As a baseline, we used random sampling and then trained a *linear regression* model, a *XGBoost* tree model and a three layer *Neural Network*. Our test results show that the machine learning models outperformed the baseline, demonstrating their potential as effective alternatives to costly laboratory experiments. The plots below show the absolute error between the ground truth and predicted values for a hold out test set.
 
 {% include random_test.html %}
 
 {% include LM_test.html %}
 
 {% include XGB_test.html %}
+
+{% include TN_test.html %}
 
 The results does show some *promise* but are not too good. This might be because the feature vectors used here were not representative enough to predict Ki accurately. Additionally, the amount of data is limited, which can hinder the model's ability to generalize and capture underlying patterns. Another possibility is that this might not be a well-posed problem, with the features lacking sufficient information to reliably map to the target variable. Future work could focus on improving the quality of feature engineering, expanding the dataset, or reformulating the problem to enhance predictive performance.
 
