@@ -26,7 +26,11 @@ header:
   - [TPSA: A Key to Bioavailability and Drug Design 💊💡](#tpsa-a-key-to-bioavailability-and-drug-design-)
   - [The Radar of Drug Design: Profiling Our Top 10 Gag-Pol Inhibitors 🎯💊](#the-radar-of-drug-design-profiling-our-top-10-gag-pol-inhibitors-)
 - [Insights gained on illuminating the Path to Optimized HIV-1 Inhibitors 🧪💊](#insights-gained-on-illuminating-the-path-to-optimized-hiv-1-inhibitors-)
-- [Affinity Prediction](#affinity-prediction)
+- [Affinity Prediction 🧲🔬](#affinity-prediction-)
+- [References](#references)
+- [Appendix](#appendix)
+  - [Statistical Tools Used in Our Analysis](#statistical-tools-used-in-our-analysis)
+
 ---
 
 # Introduction
@@ -171,4 +175,42 @@ In summary, **Cluster 1** emerges as a promising lead with strong affinity, bala
 
 The analysis of our top 10 drug candidates offers an optimistic outlook. These compounds demonstrate manageable toxicity levels, satisfactory solubility, and strong bioavailability, positioning them as promising options for further development. While hurdles like reducing BBB penetration and hERG inhibition persist, these drugs show significant potential to meet the stringent criteria for commercialization. The path toward a safe and effective HIV-1 inhibitor is shining with possibility!
 
-# Affinity Prediction
+# Affinity Prediction 🧲🔬
+
+This is affinity prediction section
+
+# References
+
+1. BindingDB Dataset - This was used for our analysis [https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp](https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp)
+2. [https://www.who.int/news-room/fact-sheets/detail/hiv-aids](https://www.who.int/news-room/fact-sheets/detail/hiv-aids)
+3. [https://en.wikipedia.org/w/index.php?title=Lipinski%27s_rule_of_five&oldid=1259121091](https://en.wikipedia.org/w/index.php?title=Lipinski%27s_rule_of_five&oldid=1259121091)
+4. [https://www.sciencedirect.com/topics/chemistry/logp](https://www.sciencedirect.com/topics/chemistry/logp)
+5. [https://doi.org/10.2174/092986709787002817](https://www.sciencedirect.com/topics/chemistry/logp)
+
+# Appendix
+
+## Statistical Tools Used in Our Analysis
+
+To evaluate the properties of the ligand families, we used *Kruskal-Wallis* and *Mann-Whitney U* tests. These statistical methods helped us determine whether the families shared similar properties and identify significant differences between them. Below, we explain how these tests work and why they were chosen.
+
+How Do These Tests Work?
+
+1. **Kruskal-Wallis Test** - This evaluates whether the medians of multiple groups are equal. It works under the null hypothesis:
+
+"The population medians are equal."
+
+If the p-value from the test is less than 0.05, we reject this hypothesis, indicating that at least one group differs significantly from the others.
+
+Kruskal-Wallis is especially useful when comparing more than two groups.
+
+2. **Mann-Whitney U Test** - This test is used for pairwise comparisons between two groups. Its null hypothesis states:
+
+"There is no difference in terms of central tendency between the two groups."
+
+Again, if the p-value 	is less than 0.05, we reject the null hypothesis, concluding that there is a significant difference between the two groups.
+
+Why Not ANOVA and t-Tests?
+
+While ANOVA and t-tests are standard for similar analyses, their validity depends on certain assumptions, such as:
+
+The data must follow a normal distribution. The variances among groups must be equal. To verify these assumptions, we conducted a *Shapiro-Wilk* test to assess the normality of the data. The results showed that the distributions were not normal, invalidating the use of ANOVA and t-tests for our analysis. Instead, we opted for non-parametric tests like Kruskal-Wallis and Mann-Whitney U, which do not rely on these assumptions and are better suited for our data.
