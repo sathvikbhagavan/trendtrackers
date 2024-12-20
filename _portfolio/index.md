@@ -63,6 +63,8 @@ We started with *SMILES*, the digital language for describing molecular structur
 
 Next, we applied *K-means* clustering, a method that groups similar items together, like organizing a playlist by genre. The result? *Four* distinct ligand clusters, each representing a family of compounds with unique characteristics that set them apart from the others.
 
+{% include MF_cluster.html %}
+
 # Analysis of different properties of the ligands
 
 Now let us start analysing some properties of these clusters to gain some insights!
